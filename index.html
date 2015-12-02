@@ -10,15 +10,17 @@ title: PhpMetrics, by Jean-François Lépine
     <div id="f-welcome" class="mui-text-center">
         <img class="img-responsive" src="images/phpmetrics-maintenability.png" alt="" width="100" height="100">
         <div class="mui-text-title">PhpMetrics is a static analysis tool for PHP<p></p></div>
+
         <div id="f-buttons">
-            <a class="mui-btn mui-btn-primary mui-btn-lg" href="{{ site.phpmetrics_repo }}/raw/master/build/phpmetrics.phar"><i class="icon-file-download"></i> DOWNLOAD (phar)</a>
-            <a class="mui-btn mui-btn-default mui-btn-flat mui-btn-lg" href="{{ site.phpmetrics_repo }}"><i class="icon-github"></i> View on GitHub</a>
+            <iframe src="https://ghbtns.com/github-btn.html?user=Halleck45&repo=PhpMetrics&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=Halleck45&repo=PhpMetrics&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
         </div>
     </div>
 </div>
 
 
 <div class="mui-panel">
+
     <h2>Quickstart</h2>
     <p>
         PhpMetrics provides various metrics about PHP projects.
@@ -28,14 +30,39 @@ title: PhpMetrics, by Jean-François Lépine
 
     With Composer (or <a href="{{ site.phpmetrics_repo }}/raw/master/build/phpmetrics.phar">download the phar</a>):
     <div class="highlight">
-    <pre>composer global require <span style="color:#0000e6; ">'halleck45/phpmetrics'</span>
+<pre>composer global require <span style="color:#0000e6; ">'halleck45/phpmetrics'</span>
 phpmetrics --report-html=myreport.html <span style="color:#40015a; ">/path/of/your/sources</span>
 </pre>
     </div>
+</div>
+
+
+<div class="mui-panel">
+    <h2>Readable &amp; Accessible reports</h2>
+
+    <p>
+        PhpMetrics is designed to be understable and easy to use. Thanks to d3js, it will scores your project with beautiful graphs. PhpMetrics has a
+        "colorblind mode".
+        <br />Do not hesitate to <a href="{{site.url}}/report/latest/index.html">visit the demo</a>.
+    </p>
+    <p style="text-align:center">
+        <a href="{{site.url}}/report/latest/index.html"><img src="{{site.url}}/images/demo/animated-demo-annoted.gif" width="620" height="421" alt="animated and anooted demo of PhpMetrics report" /></a>
+    </p>
+    <h3>Continuous Integration</h3>
+    <p>
+        PhpMetrics interacts with <a href="http://jenkins-ci.org/">Jenkins</a> or <a href="http://www.sonarqube.org/">Sonar</a>. It provides reports in many
+        formats (XML, violations, HTML, CSV...). More in <a href="{{site.url}}/documentation/jenkins.html">Documentation</a>.
+    </p>
+
+</div>
 
 
 
+<div class="mui-panel">
     <h3>Metrics</h3>
+    <p>
+        PHPMetrics provides tons of metrics:
+    </p>
     <ul>
         <li>
             <strong>Complexity</strong>: Cyclomatic complexity, Myer's interval, Relative system complexity
@@ -54,42 +81,35 @@ phpmetrics --report-html=myreport.html <span style="color:#40015a; ">/path/of/yo
         </li>
     </ul>
 
-    <h3>Readability &amp; Accessibility</h3>
-    <p>
-        PhpMetrics is designed to be understable and easy to use. Thanks to d3js, it will scores your project with beautiful graphs. PhpMetrics has a
-        "colorblind mode".
-        <br />Do not hesitate to <a href="{{site.url}}/report/latest/index.html">visit the demo</a>.
-    </p>
-    <div>
-        <a href="{{site.url}}/report/latest/index.html"><img src="images/phpmetrics-report.png" alt="Example of HTML report" style="width: 50%; margin: 0 auto;"/></a>
-    </div>
-
-
-    <h3>Continuous Integration</h3>
-    <p>
-        PhpMetrics interacts with <a href="http://jenkins-ci.org/">Jenkins</a> or <a href="http://www.sonarqube.org/">Sonar</a>. It provides reports in many
-        formats (XML, violations, HTML, CSV...). Read <a href="{{site.url}}/documentation/jenkins.html">Documentation</a>.
-    </p>
-
-
 </div>
 
 <div class="mui-panel">
     <h2>Open source and free</h2>
+    <p>
+        PhpMetrics is hosted under <a href="{{ site.phpmetrics_repo }}/blob/master/LICENSE">MIT</a> license on <a href="{{ site.phpmetrics_repo }}"> <i class="icon icon-github"></i> Github</a>.
+    </p>
     <div>
-        <iframe src="https://ghbtns.com/github-btn.html?user=Halleck45&repo=PhpMetrics&type=star&count=true" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-        <iframe src="https://ghbtns.com/github-btn.html?user=Halleck45&repo=PhpMetrics&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=Halleck45&repo=PhpMetrics&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=Halleck45&repo=PhpMetrics&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
     </div>
     <p>
+        <img src="https://poser.pugx.org/halleck45/php-metrics/license.svg" />
         <img src="https://poser.pugx.org/halleck45/php-metrics/v/stable.svg" />
+        <img src="https://scrutinizer-ci.com/g/Halleck45/PhpMetrics/badges/quality-score.png?b=master" />
     </p>
     <p>
         PhpMetrics is an Open Source project created by <a href="http://www.lepine.pro">Jean-François Lépine</a> (<a href="https://twitter.com/Halleck45">Halleck45</a>).
     </p>
+
+
+    <h3>Contributors</h3>
     <p>
-        License: <a href="{{ site.phpmetrics_repo }}/blob/master/LICENSE">MIT</a>, sources hosted on <a href="{{ site.phpmetrics_repo }}"><i class="icon icon-github"></i> Github</a>.
+        <strong>a big thanks to <a href="{{ site.phpmetrics_repo }}/graphs/contributors">all contributors</a> !</strong>
     </p>
-
-
+    <p>
+        {% for contributor in site.github.contributors %}
+        <img src="contributor.avatar_url" alt="contributor.login" alt="title.login" />
+        {% endfor %}
+    </p>
 </div>
 
