@@ -118,3 +118,24 @@ table {
 .icon-github2:before {
     content: "\eab2";
 }
+
+
+
+/** ----- contributors ----- */
+.contributors ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contributors li {
+    list-style: none;
+    padding: 10px;
+    display:inline-block;
+}
+.contributors li img {
+    width: 50px;
+    height: 50px;
+}
+.contributors li span {
+    display: block;
+}

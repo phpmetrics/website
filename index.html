@@ -106,11 +106,21 @@ phpmetrics --report-html=myreport.html <span style="color:#40015a; ">/path/of/yo
     <p>
         <strong>a big thanks to <a href="{{ site.phpmetrics_repo }}/graphs/contributors">all contributors</a> !</strong>
     </p>
-    <!--Eh! Only cotnributors of website are listed-->
-    <!--<p>-->
-        <!--{% for contributor in site.github.contributors %}-->
-        <!--<img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}" alt="{{ title.login }}" />-->
-        <!--{% endfor %}-->
-    <!--</p>-->
+    <p>
+        {% for contributor in site.github.contributors %}
+        <img src="{{ contributor.avatar_url }}" alt="{{ contributor.login }}" alt="{{ title.login }}" />
+        {% endfor %}
+    </p>
+    <div class="contributors">
+        <div id="phpmetrics-contributors"></div>
+    </div>
+    <script type="text/javascript" src="/js/contributors.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+            contributors.initializeOptions({imageSize: 50});
+            contributors.generate('halleck45', 'phpmetrics',
+                    {placeholder: 'phpmetrics-contributors'});
+        });
+    </script>
 </div>
 
