@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PhpMetrics, by Jean-François Lépine
+title: PhpMetrics: static analysis for PHP; by Jean-François Lépine
 ---
 
 
@@ -28,13 +28,12 @@ title: PhpMetrics, by Jean-François Lépine
 
     <h3 id="install">Installation</h3>
 
-    With Composer (or <a href="{{ site.phpmetrics_repo }}/raw/master/build/phpmetrics.phar">download the phar</a>):
     <div class="highlight">
 <pre>composer global require <span style="color:#0000e6; ">'phpmetrics/phpmetrics'</span>
 phpmetrics --report-html=myreport.html <span style="color:#40015a; ">/path/of/your/sources</span>
 </pre>
+        </div>
     </div>
-</div>
 
 
 <div class="mui-panel">
@@ -54,6 +53,10 @@ phpmetrics --report-html=myreport.html <span style="color:#40015a; ">/path/of/yo
         formats (XML, violations, HTML, CSV...). More in <a href="{{site.url}}/documentation/jenkins.html">Documentation</a>.
     </p>
 
+    <h3>Plugins and extensions</h3>
+    <p>
+        PhpMetrics can be extended with plugins (Symfony2...). More in <a href="{{site.url}}/documentation/plugins.html">Discover how</a>.
+    </p>
 </div>
 
 
