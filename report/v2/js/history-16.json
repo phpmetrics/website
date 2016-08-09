@@ -1,0 +1,19 @@
+{
+    "avg": {
+        "ccn": 3.11,
+        "bugs": 0.08,
+        "kanDefect": 0.45,
+        "relativeSystemComplexity": 10.31,
+        "relativeDataComplexity": 0.14,
+        "relativeStructuralComplexity": 10.17,
+        "lcom": 0.5
+    },
+    "sum": {
+        "loc": 616,
+        "cloc": 201,
+        "lloc": 416,
+        "nbMethods": 19,
+        "nbClasses": 9,
+        "nbInterfaces": 0
+    }
+}

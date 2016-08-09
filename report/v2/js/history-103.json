@@ -1,0 +1,26 @@
+{
+    "avg": {
+        "ccn": 0.37,
+        "bugs": 0.01,
+        "kanDefect": 0.05,
+        "relativeSystemComplexity": 1.69,
+        "relativeDataComplexity": 0.05,
+        "relativeStructuralComplexity": 1.64,
+        "volume": 25.11,
+        "commentWeight": 2.09,
+        "intelligentContent": 2.49,
+        "lcom": 0.06,
+        "instability": 0.04,
+        "afferentCoupling": 0.16,
+        "efferentCoupling": 0.25,
+        "difficulty": 0.53
+    },
+    "sum": {
+        "loc": 1986,
+        "cloc": 618,
+        "lloc": 1362,
+        "nbMethods": 80,
+        "nbClasses": 34,
+        "nbInterfaces": 0
+    }
+}
