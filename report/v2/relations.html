@@ -159,7 +159,16 @@
                         Violations (4)
                     </a>
                 </li>
-                                <li>
+                                    <li>
+                        <a href="junit.html">
+                            <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 2C8.43 2 5.23 3.54 3.01 6L12 22l8.99-16C18.78 3.55 15.57 2 12 2zM7 7c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm5 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                            </svg>
+                            Unit testing
+                        </a>
+                    </li>
+                                                <li>
                     <a href="git.html">
                         <img src="images/logo-git.png" alt="">
                         Git
@@ -204,17 +213,17 @@
 
 <footer>
     <a href="http://phpmetrics.org">PhpMetrics v2.0.0</a>, by <a href="http://blog.lepine.pro">Jean-François Lépine</a>.
-    <br/>August 17th, 2016 06:17:40</footer>
+    <br/>January 23rd, 2017 18:07:02</footer>
 
 <script type="text/javascript" src="js/functions.js"></script>
 <script type="text/javascript" src="https://d3js.org/d3.v3.js"></script>
-<script type="text/javascript" src="http://d3js.org/d3.hexbin.v0.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3.hexbin.v0.js"></script>
 <script type="text/javascript" src="js/tabled.min.js"></script>
 <script type="text/javascript" src="js/sort-table.min.js"></script>
 <script type="text/javascript" src="js/graph-maintainability.js"></script>
 
 
-<script type="text/javascript" src="json/classes.js"></script>
+<script type="text/javascript" src="js/classes.js"></script>
 
 <script type="text/javascript">
     var accessibilityEnabled = false;
@@ -255,6 +264,16 @@
         ]
     },
     {
+        "name": "\\Hal\\Report\\Violations\\Xml\\Reporter",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\DOMDocument",
+        "size": 3000,
+        "relations": []
+    },
+    {
         "name": "\\Hal\\Report\\Cli\\Reporter",
         "size": 3000,
         "relations": []
@@ -268,7 +287,8 @@
         "name": "\\Hal\\Metric\\ClassMetric",
         "size": 3000,
         "relations": [
-            "\\Hal\\Metric\\Metric"
+            "\\Hal\\Metric\\Metric",
+            "\\JsonSerializable"
         ]
     },
     {
@@ -278,6 +298,11 @@
     },
     {
         "name": "\\Hal\\Metric\\Metric",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\JsonSerializable",
         "size": 3000,
         "relations": []
     },
@@ -399,6 +424,26 @@
         "relations": []
     },
     {
+        "name": "\\Hal\\Component\\Ast\\NodeTraverser",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\PhpParser\\NodeTraverser",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\parent",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Hal\\Component\\Issue\\Issuer",
+        "size": 3000,
+        "relations": []
+    },
+    {
         "name": "\\Hal\\Component\\Tree\\Edge",
         "size": 3000,
         "relations": []
@@ -516,11 +561,6 @@
         "relations": []
     },
     {
-        "name": "\\PhpParser\\NodeTraverser",
-        "size": 3000,
-        "relations": []
-    },
-    {
         "name": "\\PhpParser\\NodeVisitor\\NameResolver",
         "size": 3000,
         "relations": []
@@ -531,18 +571,25 @@
         "relations": []
     },
     {
+        "name": "\\Hal\\Metric\\System\\UnitTesting\\UnitTesting",
+        "size": 3000,
+        "relations": []
+    },
+    {
         "name": "\\Hal\\Application\\Application",
         "size": 3000,
         "relations": [
             "\\Symfony\\Component\\Console\\Formatter\\OutputFormatter",
             "\\Symfony\\Component\\Console\\Output\\ConsoleOutput",
+            "\\Hal\\Component\\Issue\\Issuer",
             "\\Hal\\Application\\Config\\Parser",
             "\\Hal\\Application\\Config\\Validator",
             "\\Hal\\Component\\File\\Finder",
             "\\Hal\\Application\\Analyze",
             "\\Hal\\Violation\\ViolationParser",
             "\\Hal\\Report\\Cli\\Reporter",
-            "\\Hal\\Report\\Html\\Reporter"
+            "\\Hal\\Report\\Html\\Reporter",
+            "\\Hal\\Report\\Violations\\Xml\\Reporter"
         ]
     },
     {
