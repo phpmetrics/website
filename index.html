@@ -30,12 +30,21 @@ title: PhpMetrics, static analysis for PHP - by Jean-François Lépine
     <h3 id="install">Installation</h3>
 
     <div class="highlight">
-<pre>composer global require <span style="color:#0000e6; ">'phpmetrics/phpmetrics'</span>
-phpmetrics --report-html=myreport.html <span style="color:#40015a; ">/path/of/your/sources</span>
-</pre>
-        </div>
+        <pre>
+            wget https://github.com/phpmetrics/PhpMetrics/raw/master/build/phpmetrics.phar<br/>
+            chmod +x phpmetrics.phar<br/>
+            mv phpmetrics.phar /usr/local/bin/phpmetrics
+        </pre>
     </div>
 
+    <h3 id="basic_usage">Basic Usage</h3>
+
+    <div>
+        <pre>
+            phpmetrics --report-html=myreport.html <span style="color:#40015a; ">/path/of/your/sources</span>
+        </pre>
+    </div>
+</div>
 
 <div class="mui-panel">
     <h2>Readable &amp; Accessible reports</h2>
