@@ -50,373 +50,426 @@
 <div class="page">
     <div class="content">
         <div class="report-details">
-            Created at 2017-04-10 18:09:25        , with PHPMetrics v2.0.0 (<a href="https://twitter.com.Halleck45">Jean-François Lépine</a>).
+            Created at 2017-04-10 18:14:02        , with PHPMetrics v2.0.0 (<a href="https://twitter.com.Halleck45">Jean-François Lépine</a>).
         </div>
+
+
+
 
 <div class="row">
     <div class="column">
         <div class="bloc">
-            <h4>Coupling</h4>
+            <h4>Demographical repartitions of logical lines of code by class</h4>
+            <div id="lloc-repartition" style="height: 200px"></div>
+            <div class="help" style="text-align: center">Percentile</div>
+        </div>
+    </div>
+</div>
 
-            <div class="help">
-                <strong>Afferent coupling (AC)</strong> is the number of classes affected by given class.
-                <br/><strong>Efferent coupling (EC)</strong> is the number of classes from which given class receives
-                effects.
-            </div>
-
-            <table id="table-relations" class="js-sort-table">
+<div class="row">
+    <div class="column">
+        <div class="bloc">
+            <h4>Explore</h4>
+            <table class="js-sort-table" id="table-length">
                 <thead>
                 <tr>
                     <th>Class</th>
-                    <th class="js-sort-number">Afferent coupling</th>
-                    <th class="js-sort-number">Efferent coupling</th>
-                    <th class="js-sort-number">Instability</th>
-                    <th class="js-sort-number">ClassRank</th>
+                    <th class="js-sort-number">LLOC</th>
+                    <th class="js-sort-number">CLOC</th>
+                    <th class="js-sort-number">Volume</th>
+                    <th class="js-sort-number">Intelligent content</th>
+                    <th class="js-sort-number">Comment Weight</th>
+                </tr>
                 </thead>
-                <tbody>
                                     <tr>
                         <td>Hal\Report\Html\Reporter</td>
-                        <td>1</td>
-                        <td>5</td>
-                        <td>0.83</td>
-                        <td>0</td>
+                        <td>124</td>
+                        <td>30</td>
+                        <td>2337.07</td>
+                        <td>186.42</td>
+                        <td>31.85</td>
                     </tr>
                                     <tr>
                         <td>Hal\Report\Violations\Xml\Reporter</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>0.8</td>
-                        <td>0</td>
+                        <td>47</td>
+                        <td>15</td>
+                        <td>510.91</td>
+                        <td>89.41</td>
+                        <td>34.74</td>
                     </tr>
                                     <tr>
                         <td>Hal\Report\Cli\Reporter</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>0.8</td>
-                        <td>0</td>
+                        <td>85</td>
+                        <td>14</td>
+                        <td>1022.69</td>
+                        <td>132.03</td>
+                        <td>26.8</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Consolidated</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>0.25</td>
-                        <td>0.01</td>
+                        <td>86</td>
+                        <td>37</td>
+                        <td>1036.75</td>
+                        <td>98.74</td>
+                        <td>37.55</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\InterfaceMetric</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0.5</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                         <td>0</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\FunctionMetric</td>
-                        <td>4</td>
-                        <td>2</td>
-                        <td>0.33</td>
-                        <td>0.01</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\FileMetric</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0.67</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                         <td>0</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Metrics</td>
-                        <td>18</td>
-                        <td>1</td>
-                        <td>0.05</td>
-                        <td>0.02</td>
+                        <td>26</td>
+                        <td>25</td>
+                        <td>48.76</td>
+                        <td>9.75</td>
+                        <td>44.21</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\ProjectMetric</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0.67</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                         <td>0</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Helper\RoleOfMethodDetector</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <td>29</td>
+                        <td>15</td>
+                        <td>228.4</td>
+                        <td>26.1</td>
+                        <td>39.31</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Class_\Component\MaintainabilityIndexVisitor</td>
-                        <td>1</td>
-                        <td>9</td>
-                        <td>0.9</td>
-                        <td>0</td>
+                        <td>46</td>
+                        <td>31</td>
+                        <td>573.86</td>
+                        <td>56.58</td>
+                        <td>41.61</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Class_\Coupling\ExternalsVisitor</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>0.75</td>
-                        <td>0</td>
+                        <td>75</td>
+                        <td>27</td>
+                        <td>473.67</td>
+                        <td>31.64</td>
+                        <td>35.77</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Class_\Text\HalsteadVisitor</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>0.8</td>
-                        <td>0</td>
+                        <td>59</td>
+                        <td>29</td>
+                        <td>1230.36</td>
+                        <td>102.83</td>
+                        <td>38.83</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Class_\Text\LengthVisitor</td>
-                        <td>1</td>
-                        <td>5</td>
-                        <td>0.83</td>
-                        <td>0</td>
+                        <td>36</td>
+                        <td>20</td>
+                        <td>371.51</td>
+                        <td>47.94</td>
+                        <td>40.21</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Class_\Complexity\KanDefectVisitor</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>0.75</td>
-                        <td>0</td>
+                        <td>33</td>
+                        <td>15</td>
+                        <td>219.62</td>
+                        <td>31.37</td>
+                        <td>38.09</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Class_\Complexity\CyclomaticComplexityVisitor</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>0.6</td>
-                        <td>0</td>
+                        <td>53</td>
+                        <td>27</td>
+                        <td>288.86</td>
+                        <td>15.28</td>
+                        <td>39.17</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Class_\ClassEnumVisitor</td>
-                        <td>1</td>
-                        <td>7</td>
-                        <td>0.88</td>
-                        <td>0</td>
+                        <td>65</td>
+                        <td>8</td>
+                        <td>579.61</td>
+                        <td>46.03</td>
+                        <td>24.53</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Class_\Structural\SystemComplexityVisitor</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>0.75</td>
-                        <td>0</td>
+                        <td>40</td>
+                        <td>23</td>
+                        <td>465.98</td>
+                        <td>56.17</td>
+                        <td>40.26</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\Class_\Structural\LcomVisitor</td>
-                        <td>1</td>
-                        <td>8</td>
-                        <td>0.89</td>
-                        <td>0</td>
+                        <td>62</td>
+                        <td>27</td>
+                        <td>502.12</td>
+                        <td>24.45</td>
+                        <td>37.67</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\System\Changes\GitChanges</td>
-                        <td>1</td>
-                        <td>6</td>
-                        <td>0.86</td>
-                        <td>0</td>
+                        <td>106</td>
+                        <td>36</td>
+                        <td>1437.37</td>
+                        <td>88.91</td>
+                        <td>35.17</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\System\Coupling\PageRank</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0.5</td>
-                        <td>0</td>
+                        <td>55</td>
+                        <td>20</td>
+                        <td>723.78</td>
+                        <td>29.77</td>
+                        <td>35.87</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\System\Coupling\Coupling</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>0.8</td>
-                        <td>0</td>
+                        <td>44</td>
+                        <td>12</td>
+                        <td>379.98</td>
+                        <td>34.18</td>
+                        <td>32.86</td>
                     </tr>
                                     <tr>
                         <td>Hal\Metric\ClassMetric</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0.5</td>
-                        <td>0.01</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Ast\NodeTraverser</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0.67</td>
-                        <td>0</td>
+                        <td>60</td>
+                        <td>5</td>
+                        <td>395.06</td>
+                        <td>22.2</td>
+                        <td>20.83</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Output\CliOutput</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0.5</td>
-                        <td>0</td>
+                        <td>31</td>
+                        <td>25</td>
+                        <td>103.78</td>
+                        <td>16.51</td>
+                        <td>43.47</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Output\ProgressBar</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0.5</td>
-                        <td>0</td>
+                        <td>43</td>
+                        <td>40</td>
+                        <td>320.63</td>
+                        <td>24.98</td>
+                        <td>43.99</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Issue\Issuer</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0.5</td>
-                        <td>0</td>
+                        <td>95</td>
+                        <td>44</td>
+                        <td>690.61</td>
+                        <td>102.05</td>
+                        <td>37.01</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Tree\Edge</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>0.5</td>
-                        <td>0.37</td>
+                        <td>24</td>
+                        <td>23</td>
+                        <td>41.36</td>
+                        <td>15.04</td>
+                        <td>44.19</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Tree\Node</td>
-                        <td>13</td>
-                        <td>1</td>
-                        <td>0.07</td>
-                        <td>0.35</td>
+                        <td>49</td>
+                        <td>40</td>
+                        <td>148.99</td>
+                        <td>12.02</td>
+                        <td>43.08</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Tree\Graph</td>
-                        <td>3</td>
-                        <td>8</td>
-                        <td>0.73</td>
-                        <td>0.01</td>
+                        <td>59</td>
+                        <td>35</td>
+                        <td>268</td>
+                        <td>31.53</td>
+                        <td>40.53</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Tree\Operator\CycleDetector</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>0</td>
+                        <td>41</td>
+                        <td>23</td>
+                        <td>229.44</td>
+                        <td>16.06</td>
+                        <td>40.04</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Tree\GraphException</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>0.25</td>
-                        <td>0.01</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\Tree\HashMap</td>
-                        <td>0</td>
-                        <td>4</td>
-                        <td>1</td>
-                        <td>0</td>
+                        <td>26</td>
+                        <td>21</td>
+                        <td>48.76</td>
+                        <td>9.75</td>
+                        <td>43.01</td>
                     </tr>
                                     <tr>
                         <td>Hal\Component\File\Finder</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>0.75</td>
-                        <td>0</td>
+                        <td>33</td>
+                        <td>35</td>
+                        <td>297.21</td>
+                        <td>67.84</td>
+                        <td>44.82</td>
                     </tr>
                                     <tr>
                         <td>Hal\Violation\Violations</td>
-                        <td>1</td>
-                        <td>4</td>
-                        <td>0.8</td>
-                        <td>0</td>
+                        <td>25</td>
+                        <td>19</td>
+                        <td>63.4</td>
+                        <td>12.19</td>
+                        <td>42.55</td>
                     </tr>
                                     <tr>
                         <td>Hal\Violation\Class_\Blob</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0.67</td>
-                        <td>0</td>
+                        <td>42</td>
+                        <td>12</td>
+                        <td>199.65</td>
+                        <td>46.79</td>
+                        <td>32.86</td>
                     </tr>
                                     <tr>
                         <td>Hal\Violation\Class_\TooComplexCode</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0.67</td>
-                        <td>0</td>
+                        <td>32</td>
+                        <td>12</td>
+                        <td>109.39</td>
+                        <td>31.67</td>
+                        <td>35.56</td>
                     </tr>
                                     <tr>
                         <td>Hal\Violation\Class_\TooDependent</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0.67</td>
-                        <td>0</td>
+                        <td>31</td>
+                        <td>12</td>
+                        <td>106.61</td>
+                        <td>28.05</td>
+                        <td>35.87</td>
                     </tr>
                                     <tr>
                         <td>Hal\Violation\Class_\TooLong</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0.67</td>
-                        <td>0</td>
+                        <td>31</td>
+                        <td>12</td>
+                        <td>105.49</td>
+                        <td>30.54</td>
+                        <td>35.87</td>
                     </tr>
                                     <tr>
                         <td>Hal\Violation\Class_\ProbablyBugged</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0.67</td>
-                        <td>0</td>
+                        <td>34</td>
+                        <td>13</td>
+                        <td>126.71</td>
+                        <td>39.22</td>
+                        <td>36.08</td>
                     </tr>
                                     <tr>
                         <td>Hal\Violation\ViolationParser</td>
-                        <td>1</td>
-                        <td>7</td>
-                        <td>0.88</td>
-                        <td>0</td>
+                        <td>15</td>
+                        <td>4</td>
+                        <td>36.5</td>
+                        <td>16.59</td>
+                        <td>32.62</td>
                     </tr>
                                     <tr>
                         <td>Hal\Application\Analyze</td>
-                        <td>1</td>
-                        <td>22</td>
-                        <td>0.96</td>
-                        <td>0</td>
+                        <td>59</td>
+                        <td>27</td>
+                        <td>386.52</td>
+                        <td>61.84</td>
+                        <td>38.15</td>
                     </tr>
                                     <tr>
                         <td>Hal\Application\Application</td>
-                        <td>0</td>
-                        <td>12</td>
-                        <td>1</td>
-                        <td>0</td>
+                        <td>43</td>
+                        <td>13</td>
+                        <td>321.17</td>
+                        <td>71.37</td>
+                        <td>34.2</td>
                     </tr>
                                     <tr>
                         <td>Hal\Application\Config\Validator</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>0.57</td>
-                        <td>0</td>
+                        <td>54</td>
+                        <td>15</td>
+                        <td>257.84</td>
+                        <td>31.76</td>
+                        <td>30.92</td>
                     </tr>
                                     <tr>
                         <td>Hal\Application\Config\ConfigException</td>
                         <td>4</td>
-                        <td>1</td>
-                        <td>0.2</td>
-                        <td>0.01</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
                     </tr>
                                     <tr>
                         <td>Hal\Application\Config\Parser</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>0.5</td>
-                        <td>0</td>
+                        <td>33</td>
+                        <td>3</td>
+                        <td>303.08</td>
+                        <td>33.03</td>
+                        <td>21.62</td>
                     </tr>
                                     <tr>
                         <td>Hal\Application\Config\Config</td>
-                        <td>7</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0.01</td>
+                        <td>29</td>
+                        <td>23</td>
+                        <td>74.96</td>
+                        <td>13.04</td>
+                        <td>42.87</td>
                     </tr>
                                     <tr>
                         <td>MyVisitor</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>0</td>
+                        <td>13</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>14</td>
+                        <td>44.46</td>
                     </tr>
-                                </tbody>
-            </table>
-
+                            </table>
         </div>
     </div>
-
 </div>
+
 
 </div>
 
@@ -570,6 +623,126 @@
 </body>
 </html>
 
-<script type="text/javascript">
-    sortTable(document.getElementById('table-relations'), 1, -1);
+<script>
+
+    // table
+    sortTable(document.getElementById('table-length'), 1, -1);
+
+
+    var margin = {top: 20, right: 20, bottom: 30, left: 40},
+        width = document.getElementById('lloc-repartition').offsetWidth - margin.left - margin.right,
+        height = document.getElementById('lloc-repartition').offsetHeight - margin.top - margin.bottom;
+
+    var x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], .1);
+
+    var y = d3.scale.linear()
+        .range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left")
+        ;
+
+    var svg = d3.select("#lloc-repartition").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    data = [
+    {
+        "lloc": 36,
+        "percentile": 50
+    },
+    {
+        "lloc": 41,
+        "percentile": 55
+    },
+    {
+        "lloc": 43,
+        "percentile": 60
+    },
+    {
+        "lloc": 46,
+        "percentile": 65
+    },
+    {
+        "lloc": 49,
+        "percentile": 70
+    },
+    {
+        "lloc": 54,
+        "percentile": 75
+    },
+    {
+        "lloc": 59,
+        "percentile": 80
+    },
+    {
+        "lloc": 60,
+        "percentile": 85
+    },
+    {
+        "lloc": 65,
+        "percentile": 90
+    },
+    {
+        "lloc": 86,
+        "percentile": 95
+    },
+    {
+        "lloc": 106,
+        "percentile": 100
+    }
+];
+
+    x.domain(data.map(function (d) {
+        return d.percentile;
+    }));
+    y.domain([0, d3.max(data, function (d) {
+        return d.lloc;
+    })]);
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis)
+        .append("text")
+        .style("text-anchor", "end")
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Logical lines of code");
+
+    svg.selectAll(".bar")
+        .data(data)
+        .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", function (d) {
+            return x(d.percentile);
+        })
+        .attr("width", x.rangeBand())
+        .attr("y", function (d) {
+            return y(d.lloc);
+        })
+        .attr("height", function (d) {
+            return height - y(d.lloc);
+        });
+
+    function type(d) {
+        d.lloc = +d.lloc;
+        return d;
+    }
+
 </script>
