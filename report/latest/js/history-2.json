@@ -1,33 +1,33 @@
 {
     "avg": {
-        "ccn": 4.37,
+        "ccn": 4.38,
         "bugs": 0.1,
-        "kanDefect": 0.6,
-        "relativeSystemComplexity": 19.49,
-        "relativeDataComplexity": 0.77,
-        "relativeStructuralComplexity": 18.72,
-        "volume": 299.66,
-        "commentWeight": 26.65,
-        "intelligentContent": 32.56,
-        "lcom": 0.96,
-        "instability": 0.54,
+        "kanDefect": 0.59,
+        "relativeSystemComplexity": 19.36,
+        "relativeDataComplexity": 0.82,
+        "relativeStructuralComplexity": 18.54,
+        "volume": 295.75,
+        "commentWeight": 26.62,
+        "intelligentContent": 34.38,
+        "lcom": 0.98,
+        "instability": 0.53,
         "afferentCoupling": 2.11,
-        "efferentCoupling": 3,
-        "difficulty": 6.41,
-        "mi": 81.32
+        "efferentCoupling": 2.97,
+        "difficulty": 6.2,
+        "mi": 80.05
     },
     "sum": {
-        "loc": 3050,
-        "cloc": 931,
-        "lloc": 2087,
-        "nbMethods": 126,
-        "nbClasses": 48,
+        "loc": 3220,
+        "cloc": 971,
+        "lloc": 2216,
+        "nbMethods": 133,
+        "nbClasses": 51,
         "nbInterfaces": 3,
         "violations": {
-            "total": 5,
+            "total": 16,
             "information": 1,
             "warning": 4,
-            "error": 0,
+            "error": 11,
             "critical": 0
         }
     }
