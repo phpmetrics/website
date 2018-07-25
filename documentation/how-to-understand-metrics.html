@@ -81,13 +81,6 @@ class Example {
         </div>
     </section>
 
-
-
-
-
-
-
-
     <section id="mi">
         <div class="container">
             <div class="row">
@@ -96,20 +89,31 @@ class Example {
                     <hr class="star-primary">
                 </div>
                 <div class="col-lg-12">
+
                     <p>
-                        Maintainability index evaluates ... the maintainability of any project. It provides a score between 0 to 118.
+                        Maintainability index evaluates ... the maintainability of any project. It provides a score between 0 to 221.
                     </p>
                     <p>
                         This score is standard, and works for any language : <code>PHP</code>, <code>.Net</code>, <code>Java</code>...
                     </p>
                     <p>
-                        Generally, we consider the following scores:
+                        The calculation's formula is the one created in 1992 by Paul Oman and Jack Hagemeister, promoted by the Software Engine Institute (SEI) in 1997:
                     </p>
-                    <ul>
-                        <li><score>&lt;64</score>: low maintainability. The project has probably technical debt.</li>
-                        <li><score>65-84</score>: medium maintainability. The project has problems, but nothing really serious.</li>
-                        <li><score>&gt;85</score>: high maintainability. The project is probably good.</li>
-                    </ul>
+
+                    <p>
+                        <code>
+                            MI = 171 - 5.2 * log2(V) - 0.23 * CC - 16.2 * log2 (LOC) + 50 * sin (sqrt(2.4 * CM))
+                        </code>
+                    </p>
+
+                    <p>With:</p>
+                   <ul>
+                       <li> V - the Halstead Volume </li>
+                       <li> CC - the cyclomatic Complexity </li>
+                       <li> LOC - Lines of code </li>
+                       <li> CM - percentage of comment lines (value between 0 and 1, 1 => 100%) </li>
+                   </ul>
+
                 </div>
             </div>
         </div>
