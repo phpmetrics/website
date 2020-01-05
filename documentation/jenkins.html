@@ -29,7 +29,7 @@ title: PhpMetrics with Jenkins
 {% highlight bash %}
 #!/bin/bash
 mkdir -p build
-wget {{ site.phpmetrics_repo }}/raw/master/build/phpmetrics.phar
+wget https://github.com/phpmetrics/PhpMetrics/releases/latest/download/phpmetrics.phar
 php phpmetrics.phar --report-html=build/phpmetrics.html --report-xml=build/phpmetrics.xml --violations-xml=build/violations.xml
 {% endhighlight %}
 
