@@ -32,7 +32,7 @@ Choose your favorite method:
 === "Apt (Debian, Ubuntu...)"
 
     ```bash
-    curl https://github.com/phpmetrics/PhpMetrics/releases/download/v2.7.4/phpmetrics.deb
+    curl https://raw.githubusercontent.com/phpmetrics/PhpMetrics/master/releases/phpmetrics.deb -o phpmetrics.deb
     dpkg -i phpmetrics.deb
     ```
 
