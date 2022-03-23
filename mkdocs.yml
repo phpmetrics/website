@@ -26,6 +26,7 @@ nav:
   - Home: index.md
   - Quick Start: getting-started.md
   - Metrics: metrics.md
+  - Configuration: configuration.md
   - License: license.md
 
 markdown_extensions:
