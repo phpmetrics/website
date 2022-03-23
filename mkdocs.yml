@@ -1,0 +1,49 @@
+site_name: PhpMetrics
+site_url: https://phpmetrics.org
+repo_url: https://github.com/phpmetrics/PhpMetrics/
+repo_name: phpmetrics/PhpMetrics
+site_description: Beautiful and understandable static analysis tool for PHP
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.share
+nav:
+  - Home: index.md
+  - Quick Start: getting-started.md
+  - Continuous integration: continuous-integration.md
+  - License: license.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
+plugins:
+  - search
+extra_css:
+  - css/extra.css
+extra:
+  analytics:
+    provider: google
+    property: UA-xxxx
+  consent:
+    title: Cookie consent
+    description: >
+      We use cookies to improve documentation's navigation.
