@@ -1,8 +1,1 @@
-composer.lock
 .idea
-/vendor/
-.vagrant
-provision.sh
-Vagrantfile
-node_modules
-build
