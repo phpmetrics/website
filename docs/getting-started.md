@@ -25,14 +25,14 @@ Choose your favorite method:
 === "Phar"
 
     ```bash
-    curl https://github.com/phpmetrics/PhpMetrics/releases/download/v2.7.3/phpmetrics.phar
+    curl -L "https://github.com/phpmetrics/PhpMetrics/blob/master/releases/phpmetrics.phar?raw=true" -o phpmetrics.phar
     chmod +x phpmetrics.phar && mv phpmetrics.phar /usr/local/bin/phpmetrics
     ```
 
 === "Apt (Debian, Ubuntu...)"
 
     ```bash
-    curl https://raw.githubusercontent.com/phpmetrics/PhpMetrics/master/releases/phpmetrics.deb -o phpmetrics.deb
+    curl -L "https://github.com/phpmetrics/PhpMetrics/blob/master/releases/phpmetrics.deb?raw=true" -o phpmetrics.deb
     dpkg -i phpmetrics.deb
     ```
 
