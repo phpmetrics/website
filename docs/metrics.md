@@ -143,7 +143,7 @@ $v$ = number of input/output variables for a procedure
 > Metrics: `afferentCoupling`, `efferentCoupling`, `instability`
 
 
-+ Afferent couplings ($Ca): The number of classes in other packages that depend upon classes within the package is an indicator of the package's responsibility.    
++ Afferent couplings ($Ca$): The number of classes in other packages that depend upon classes within the package is an indicator of the package's responsibility.    
 + Efferent couplings ($Ce$): The number of classes in other packages that the classes in a package depend upon is an indicator of the package's dependence on externalities.    
 + Instability ($I$): The ratio of efferent coupling ($Ce$) to total coupling ($Ce + Ca$) such that $I = Ce / (Ce + Ca)$.
 
