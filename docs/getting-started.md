@@ -19,7 +19,7 @@ Choose your favorite method:
 === "Docker"
 
     ```bash
-    docker run --rm --volume `pwd`:/project herloct/phpmetrics [<options>]
+    docker run --rm --volume `pwd`:/project phpmetrics/phpmetrics [<options>]
     ```
 
 === "Phar"
